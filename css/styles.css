@@ -25,13 +25,15 @@ body {}
     flex-direction: column;
     align-items: center;
     text-align: center;
+    pointer-events: none;
 
     opacity: 0;
 }
 
 .banner__frame--1 {
-    opacity: 0;
     justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .banner__frame--1 h1 {
@@ -62,17 +64,18 @@ body {}
 
 .shoe_frame2 {
     margin-top: -235px;
+    opacity: 0;
 }
 
 
 .banner__frame--3 {
-    opacity: 1;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    
+
 }
 
 .banner__frame--3 h1 {
