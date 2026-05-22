@@ -51,7 +51,7 @@
 /*frame 1*/
 .banner__frame--1 {
     justify-content: center;
-    opacity: 0; /*later 1 van maken*/
+    opacity: 1; /*later 1 van maken*/
     pointer-events: auto;
 }
 
@@ -60,10 +60,6 @@
 }
 
 /*frame 2*/
-.banner__frame--2{
-    opacity:0; /*later weg doen*/
-}
-
 .banner__frame--2 h1 {
     font-size: 100px;
     align-items: flex-start;
@@ -82,7 +78,6 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    opacity: 1; /*later weg */
 }
 
 .banner__frame--3 h1 {
@@ -107,6 +102,10 @@
 .logo {
     position: absolute;
     bottom: 45px;
+}
+
+.banner--300x600 .banner__frame--3 .logo_frame3 {
+    width: 100px;
 }
 
 .banner--970x250 .banner__frame:not(.banner__frame--3) .logo {

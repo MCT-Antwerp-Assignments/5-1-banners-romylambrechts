@@ -1,4 +1,4 @@
-/*var clickTag = "https://www.nike.com/be/w/nieuwe-releases-schoenen-3n82yzy7ok";
+var clickTag = "https://www.nike.com/be/w/nieuwe-releases-schoenen-3n82yzy7ok";
 
 document.querySelector(".banner").addEventListener("click", () => {
     window.open(clickTag);
@@ -67,4 +67,4 @@ tl.to(".banner__frame--1", {
         duration: 0.6
     }, "-=0.5")
 
-    .to({}, { duration: 4.5 });*/
+    .to({}, { duration: 4.5 });
