@@ -61,7 +61,7 @@
 
 /*frame 2*/
 .banner__frame--2{
-    opacity: 1; /*later weg doen*/
+    opacity:0; /*later weg doen*/
 }
 
 .banner__frame--2 h1 {
@@ -82,6 +82,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    opacity: 1; /*later weg */
 }
 
 .banner__frame--3 h1 {
@@ -108,11 +109,12 @@
     bottom: 45px;
 }
 
-.logo_frame3 {
-    position: absolute;
-    bottom: 45px;
-    width: 100px;
+.banner--970x250 .banner__frame:not(.banner__frame--3) .logo {
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 .banner--970x250 .banner__frame--1 h1 {
     justify-content: flex-start;
@@ -135,6 +137,25 @@
     font-size: 90px;
 }
 
+.banner--970x250 .banner__frame--3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.banner--970x250 .logo {
+    position: absolute;
+    right: 200px;
+    bottom: 45px;
+}
+
+.banner--970x250 .banner__frame--3 .logo {
+    transform: translateY(-8px);
+}
+
+.banner--970x250 .shoe_frame3,
 .banner--970x250 .shoe_frame2 {
     position: absolute;
     left: 190px;
@@ -144,28 +165,23 @@
     z-index: 2;
 }
 
-.banner--970x250 .shoe_frame3 {
-    position: absolute;
-    left: 260px;
-    top: 40px;
-    width: 420px;
-    margin-top: 0;
-    z-index: 2;
-}
-
 .banner--970x250 .banner__frame--3 {
-    gap: 20px;
+    display: flex;
+    gap: 40px;
+    padding: 0 60px;
 }
 
 .banner--970x250 .buynow {
-    margin-top: 20px;
-}
+    padding: 10px 65px;
+    border: 2px solid black;
+    background: transparent;
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
 
-.banner--970x250 .logo {
-    position: absolute;
-    right: 200px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: -80px;
+
+    position: relative;
+    left: -120px;
 }
 
 .banner--970x250 .banner__frame--3 {

@@ -67,4 +67,4 @@ tl.to(".banner__frame--1", {
         duration: 0.6
     }, "-=0.5")
 
-    .to({}, { duration: 4.5 }); */
+    .to({}, { duration: 4.5 });*/
