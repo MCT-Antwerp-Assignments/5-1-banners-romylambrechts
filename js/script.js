@@ -25,8 +25,8 @@ tl.to(".banner__frame--1", {
 
     // schoen overgang
     .fromTo(".shoe_frame2",
-        { x: 250, opacity: 0, scale: 0.95 },
-        { x: 0, opacity: 1, scale: 1, duration: 1.2, ease: "power3.out" },
+        { x: 250, opacity: 0},
+        { x: 0, opacity: 1, duration: 1.2, ease: "power3.out" },
         "-=0.2"
     )
 
@@ -64,7 +64,6 @@ tl.to(".banner__frame--1", {
 
     .from(".logo_frame3", {
         opacity: 1,
-        scale: 0.8,
         duration: 0.6
     }, "-=0.5")
 

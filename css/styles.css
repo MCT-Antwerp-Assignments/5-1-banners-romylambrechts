@@ -1,35 +1,40 @@
-body {}
-
 .banner {
     position: relative;
-    overflow: hidden;
-    /*alles buiten banner mag je niet zien*/
+    overflow: hidden;       /*alles buiten banner mag je niet zien*/
     font-family: 'Anton', sans-serif;
     background-color: white;
     border: 1px solid black;
-
 }
+
 
 .banner--300x600 {
     width: 300px;
     height: 600px;
 }
 
+
 .banner__frame {
-    position: absolute;
-    /*elk frame bovenop elkaar*/
+    position: absolute;     /*elk frame bovenop elkaar*/
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     pointer-events: none;
-
     opacity: 0;
 }
 
+
+.banner__frame h1 {
+    line-height: 1;
+}
+
+.banner__frame span {
+    display: block;
+}
+
+/*frame 1*/
 .banner__frame--1 {
     justify-content: center;
     opacity: 1;
@@ -38,49 +43,31 @@ body {}
 
 .banner__frame--1 h1 {
     font-size: 65px;
-    line-height: 1;
 }
 
-.banner__frame--1 span {
-    display: block;
-}
-
-
-.banner__frame--2 {
-    opacity: 0;
-}
-
+/*frame 2*/
 .banner__frame--2 h1 {
     font-size: 100px;
     align-items: flex-start;
     padding-top: 20px;
-    line-height: 1;
 }
-
-.banner__frame--2 span {
-    display: block;
-}
-
 
 .shoe_frame2 {
     margin-top: -235px;
     opacity: 0;
 }
 
-
+/*frame 3*/
 .banner__frame--3 {
-    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-
 }
 
 .banner__frame--3 h1 {
     font-size: 100px;
-    line-height: 1;
     align-items: flex-start;
 }
 
@@ -94,10 +81,10 @@ body {}
     background: transparent;
     font-family: 'Anton', sans-serif;
     cursor: pointer;
-    margin-top: -80px
+    margin-top: -80px;
 }
 
-
+/*logo*/
 .logo {
     position: absolute;
     bottom: 45px;
