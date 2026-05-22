@@ -45,7 +45,7 @@ body {}
 
 
 .banner__frame--2 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .banner__frame--2 h1 {
@@ -60,29 +60,48 @@ body {}
 }
 
 
-.shoe {
-   margin-top: -235px;
+.shoe_frame2 {
+    margin-top: -235px;
 }
 
+
+.banner__frame--3 {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    
+}
 
 .banner__frame--3 h1 {
-    font-size: 50px;
+    font-size: 100px;
+    line-height: 1;
     align-items: flex-start;
-    padding-top: 60px;
 }
 
+.shoe_frame3 {
+    margin-top: -240px;
+}
 
 .buynow {
-    margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 65px;
     border: 2px solid black;
     background: transparent;
     font-family: 'Anton', sans-serif;
     cursor: pointer;
+    margin-top: -80px
 }
 
 
 .logo {
     position: absolute;
     bottom: 45px;
+}
+
+.logo_frame3 {
+    position: absolute;
+    bottom: 45px;
+    width: 100px;
 }
