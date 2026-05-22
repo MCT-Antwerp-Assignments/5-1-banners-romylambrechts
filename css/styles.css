@@ -1,6 +1,7 @@
 .banner {
     position: relative;
-    overflow: hidden;       /*alles buiten banner mag je niet zien*/
+    overflow: hidden;
+    /*alles buiten banner mag je niet zien*/
     font-family: 'Anton', sans-serif;
     background-color: white;
     border: 1px solid black;
@@ -12,9 +13,15 @@
     height: 600px;
 }
 
+.banner--970x250 {
+    width: 970px;
+    height: 250px;
+}
+
 
 .banner__frame {
-    position: absolute;     /*elk frame bovenop elkaar*/
+    position: absolute;
+    /*elk frame bovenop elkaar*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -23,6 +30,13 @@
     text-align: center;
     pointer-events: none;
     opacity: 0;
+}
+
+.banner--970x250 .banner__frame {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
 }
 
 
@@ -37,7 +51,7 @@
 /*frame 1*/
 .banner__frame--1 {
     justify-content: center;
-    opacity: 1;
+    opacity: 0; /*later 1 van maken*/
     pointer-events: auto;
 }
 
@@ -46,6 +60,10 @@
 }
 
 /*frame 2*/
+.banner__frame--2{
+    opacity: 1; /*later weg doen*/
+}
+
 .banner__frame--2 h1 {
     font-size: 100px;
     align-items: flex-start;
@@ -94,4 +112,66 @@
     position: absolute;
     bottom: 45px;
     width: 100px;
+}
+
+.banner--970x250 .banner__frame--1 h1 {
+    justify-content: flex-start;
+    padding-left: 180px;
+}
+
+.banner--970x250 .banner__frame--2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.banner--970x250 .banner__frame--2 h1 {
+    font-size: 90px;
+}
+
+.banner--970x250 .banner__frame--3 h1 {
+    font-size: 90px;
+}
+
+.banner--970x250 .shoe_frame2 {
+    position: absolute;
+    left: 190px;
+    top: 6px;
+    margin-top: 0;
+    opacity: 1;
+    z-index: 2;
+}
+
+.banner--970x250 .shoe_frame3 {
+    position: absolute;
+    left: 260px;
+    top: 40px;
+    width: 420px;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.banner--970x250 .banner__frame--3 {
+    gap: 20px;
+}
+
+.banner--970x250 .buynow {
+    margin-top: 20px;
+}
+
+.banner--970x250 .logo {
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner--970x250 .banner__frame--3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
 }
